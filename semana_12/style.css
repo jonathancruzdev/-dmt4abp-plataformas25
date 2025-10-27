@@ -32,26 +32,30 @@ nav {
   background-color: #000000;
   padding: 16px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-
 nav ul li a {
   color: #ccc;
   text-decoration: none;
   font-size: 21px
 }
-
 nav ul li a:hover{
   border-bottom: 4px solid teal;
 }
 
 main {
     min-height: 75vh;
+  
+}
+
+.container {
+  padding-top: 16px;
+  margin: auto;
+  width: 80%;
 }
 
 footer {
@@ -143,13 +147,13 @@ footer .logo {
   text-align: center;
 }
 
-  .card-title {
+.card-title {
    /*  color: var(--text-dark); */
     font-size: 1.5em; 
     font-weight: 700; 
     line-height: 1.2;
     margin: 0 0 10px 0;
-  }
+}
   
   .card-description {
     color: var(--text-medium);
@@ -175,10 +179,47 @@ footer .logo {
   .register-button:hover {
     background-color: #cc156e;
   }
-  
 
+.text-center {
+  text-align: center;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
 
+form input {
+  margin-bottom: 16px;
+   border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+button {
+  background-color: var(--pink-primary);
+    color: var(--bg-white);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+button:hover {
+    background-color: #cc156e;
+  }
   @media (max-width: 1024px) {
     .card-container {
       gap: 15px;
