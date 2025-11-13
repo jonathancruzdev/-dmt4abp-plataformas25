@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --pink-primary: #e6197e; 
+    --text-dark: #333;
+    --text-light: #ffffff;
+    --text-medium: #666;
+    --bg-white: #ffffff;
+    --bg-light-gray: #f9f9f9;
+  }
+  
+header {
+    background-color: #000000;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .logo {
+    width: 15%;
+}
+
+nav {
+  background-color: #000000;
+  padding: 16px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+nav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 21px
+}
+nav ul li a:hover{
+  border-bottom: 4px solid teal;
+}
+
+main {
+    min-height: 75vh;
+  
+}
+
+.container {
+  padding-top: 16px;
+  margin: auto;
+  width: 80%;
+}
+
+footer {
+    background-color: #000000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer .logo {
+  width: 10%;
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+  
+
+  .info-card {
+    width: 320px; 
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.5s;
+  }
+
+
+  .info-card:hover {
+    transform: scale(1.1);
+  }
+
+  .p-4 {
+    padding: 14px;
+  }
+
+  .card-image-placeholder img{
+    width: 100%;
+    height: 200px;
+    background-color: #ccc; 
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+
+  .card-image-placeholder.analyst {
+
+      background-color: #1a1a1a;
+  }
+  .card-image-placeholder.designer {
+      background-color: #ff9933;
+  }
+  .card-image-placeholder.film {
+      background-color: #000000;
+  }
+  
+  
+  .card-content {
+    padding: 15px 20px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-light);
+
+  }
+
+  .card-content h4 {
+    color: var(--text-light);
+  }
+  
+  .card-date {
+   /*  color: var(--text-dark); */
+    font-size: 0.95em;
+    font-weight: 600; 
+    margin-bottom: 5px;
+  }
+  
+.text-white {
+  color: white;
+  text-align: center;
+}
+
+
+.text-black {
+  color: #000000;
+}
+
+
+.card-title {
+   /*  color: var(--text-dark); */
+    font-size: 1.5em; 
+    font-weight: 700; 
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+}
+  
+  .card-description {
+    color: var(--text-medium);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+  }
+  
+  .register-button {
+    background-color: var(--pink-primary);
+    color: var(--bg-white);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #cc156e;
+  }
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.row .col {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.col.flex-col {
+  flex-direction: column;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+form input {
+  margin-bottom: 16px;
+   border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+form textarea {
+  margin-bottom: 16px;
+   border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+}
+
+button {
+  background-color: var(--pink-primary);
+    color: var(--bg-white);
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+button:hover {
+    background-color: #cc156e;
+  }
+  @media (max-width: 1024px) {
+    .card-container {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .card-container {
+      flex-direction: column; 
+      align-items: center;
+    }
+    .info-card {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
